@@ -1,0 +1,9 @@
+Building ninjacoin
+
+See doc/readme-qt.rst for instructions on building ninjacoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of ninjacoin.
+
+See doc/build-*.txt for instructions on building ninjacoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of ninjacoin.
