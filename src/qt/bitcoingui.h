@@ -11,13 +11,13 @@ class TransactionView;
 class OverviewPage;
 class StatisticsPage;
 class BlockBrowser;
-class PoolBrowser;
+//class PoolBrowser;
 class AddressBookPage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
-class ChatWindow;
+//class ChatWindow;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -67,8 +67,8 @@ private:
     OverviewPage *overviewPage;
     StatisticsPage *statisticsPage;
     BlockBrowser *blockBrowser;
-    PoolBrowser *poolBrowser;
-    ChatWindow *chatWindow;
+//    PoolBrowser *poolBrowser;
+//    ChatWindow *chatWindow;
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
@@ -79,7 +79,7 @@ private:
     QLabel *labelStakingIcon;
     QLabel *labelConnectionsIcon;
     QLabel *labelBlocksIcon;
-    QAction *actionConvertIcon;
+//    QAction *actionConvertIcon;
     QLabel *progressBarLabel;
     QProgressBar *progressBar;
 
@@ -87,8 +87,8 @@ private:
     QAction *overviewAction;
     QAction *statisticsAction;
     QAction *blockAction;
-    QAction *poolAction;
-    QAction *chatAction;
+//    QAction *poolAction;
+//    QAction *chatAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
@@ -156,7 +156,7 @@ private slots:
     /** Switch to block explorer*/
     void gotoBlockBrowser();
 	    /** Switch to block explorer*/
-    void gotoPoolBrowser();
+//    void gotoPoolBrowser();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */
@@ -165,7 +165,7 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
-    void gotoChatPage();
+//    void gotoChatPage();
     
 /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
@@ -202,7 +202,7 @@ private slots:
     void toggleHidden();
 
     void updateStakingIcon();
-	void sConvert();
+	//void sConvert();
 };
 
 #endif
