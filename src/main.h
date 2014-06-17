@@ -55,6 +55,7 @@ static const uint256 hashGenesisBlock("0x00000ad6423d22038dfa366b96159fd943c26cb
 static const uint256 hashGenesisBlockTestNet("0xbc3e13ed9e88115c7bc27d5f53148d30dfe373726d440b8f82d7e8442f4c4744");
 
 static const uint256 CheckBlock13999 ("0000000005f257766034ea2cc11a60817f0b025bf8d0fc330703ac7cb685d452");
+static const uint256 CheckBlock15380 ("0000000434378e5b734cc8af348bdaba13cf3de3a22de78dd8aba46faec72445");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 10 * 60; } // up to 10 minutes from the future

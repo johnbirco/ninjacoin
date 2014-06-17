@@ -32,6 +32,7 @@ namespace Checkpoints
         boost::assign::map_list_of
         ( 0, hashGenesisBlockTestNet )
 	( 13999, CheckBlock13999 )
+	( 15380, CheckBlock15380 )
         ;
 
     bool CheckHardened(int nHeight, const uint256& hash)

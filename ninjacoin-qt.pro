@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = ninjacoin-qt
-VERSION = 1.2.1
+VERSION = 1.2.2
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
@@ -16,6 +16,11 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     QT += widgets
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
 }
+
+
+MINIUPNPC_INCLUDE_PATH=C:/deps
+MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+
 
 
 # for boost 1.37, add -mt to the boost libraries
@@ -424,7 +429,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw48-mt-1_54
+    windows:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_54
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
