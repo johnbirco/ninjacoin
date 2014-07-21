@@ -18,9 +18,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 }
 
 
-MINIUPNPC_INCLUDE_PATH=C:/deps
-MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-
+windows:BOOST_LIB_SUFFIX=-mt-s
 
 
 # for boost 1.37, add -mt to the boost libraries
@@ -429,7 +427,6 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_54
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
@@ -438,7 +435,6 @@ isEmpty(BOOST_THREAD_LIB_SUFFIX) {
 
 isEmpty(BDB_LIB_PATH) {
     macx:BDB_LIB_PATH = /opt/local/lib/db48
-    windows:BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
 }
 
 isEmpty(BDB_LIB_SUFFIX) {
@@ -447,46 +443,20 @@ isEmpty(BDB_LIB_SUFFIX) {
 
 isEmpty(BDB_INCLUDE_PATH) {
     macx:BDB_INCLUDE_PATH = /opt/local/include/db48
-    windows:BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 }
 
 isEmpty(BOOST_LIB_PATH) {
     macx:BOOST_LIB_PATH = /opt/local/lib
-    windows:BOOST_LIB_PATH=C:/deps/boost_1_54_0/stage/lib
 }
 
 isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
-    windows:BOOST_INCLUDE_PATH=C:/deps/boost_1_54_0
 }
 
-isEmpty(OPENSSL_INCLUDE_PATH) {
-    windows:OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1h/include
-}
 
-isEmpty(OPENSSL_LIB_PATH) {
-    windows:OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1h
-}
 
-isEmpty(MINIUPNPC_INCLUDE_PATH) {
-    windows:MINIUPNPC_INCLUDE_PATH=C:/deps
-}
 
-isEmpty(LIBPNG_INCLUDE_PATH) {
-    windows:LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.9
-}
 
-isEmpty(MINIUPNPC_LIB_PATH) {
-    windows:MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-}
-
-isEmpty(QRENCODE_INCLUDE_PATH) {
-    windows:QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
-}
-
-isEmpty(QRENCODE_LIB_PATH) {
-    windows:QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
-}
 
 
 
